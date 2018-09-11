@@ -1,0 +1,544 @@
+/*Open Sans voor de normale tekst en Raleway voor de teksten die nadruk geven. */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Raleway');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	}
+
+body{
+	font-family:"Open Sans", sans-serif;
+	background-color: #D2E8F7;
+	/*De achtergrond.png die ik in mijn img map heb staan pakt de browser niet. Ik heb er uiteindelijk voor gekozen
+	om een lichte gradient te gebruiken, zodat de tijdlijn niet te druk eruitziet, maar ook niet te leeg. */
+	background-image: linear-gradient(to bottom left, #D2E8F7, white);
+	}
+
+h1{
+	width: 100%;
+	height: 31px;
+	color: #868686;
+	font-size: 20px;
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+	background-color: white;
+	box-shadow: 0px 2px 8px;
+	padding-top: 10px;
+	}
+
+/*Het woord "Tijdlijn:" krijgt een andere kleur. */
+span{
+	color: #3498DB;
+	}
+
+header{
+	width: 100%;
+	}
+
+/*.menu{
+	Is nog geen Must.
+
+	}*/
+
+.tijdlijn-begin, .tijdlijn-eind{
+	width: 341px;
+	height: 29,5px;
+	border-radius: 8px;
+	border-style: dashed;
+	border-color: #3498DB;
+	text-align: center;
+	font-size: 17px;
+	padding-top:1,5px;
+	font-style: italic;
+	color: #273746;
+	font-family:"Raleway", sans-serif;
+	margin-bottom:20px;
+	background-color: white;
+	}
+
+/*Border-left om een verticale lijn te maken. */
+.vertical-line{
+	border-left: 4px solid #3498DB;
+	height: 2961px;
+	position: absolute;
+	left: 50%;
+	top: 80px;
+	}
+
+h4{
+	font-size: 16px;
+	color: #1F618D;
+	margin-bottom: 10px;
+	font-family: "Raleway", sans-serif;
+	}
+
+/* Met de flex-box methode moet er vanaf de box vroeger tot met box nu evenveel ruimte tussen de elke box. */
+.tijdlijn{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	}
+
+/*Dit kader krijgt een position relative, zodat de img gemakkelijk te positioneren is met position absolute. */
+.kader-gebeurtenis{
+	background-color: white;
+	border: 2px solid #BCBCBC;
+	border-radius: 20px;
+	width: 214px;
+	min-height: 282px;
+	padding-left: 70px;
+	padding-top: 20px;
+	margin-left: 60px;
+	margin-bottom: 20px;
+	position: relative;
+	}
+
+.kader-gebeurtenis p{
+	width: 200px;
+	font-size: 13px;
+	color: #333333;
+	}
+
+.kader-gebeurtenis> .datum{
+	color: #1F618D;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+	text-align: right;
+	margin: 20px 0px 5px 0px;
+	}
+
+/*De afbeelding krijgt position absolute, zodat het gemakkelijk over de gebeurtenis te plaatsen is. */
+#afbeelding1{
+	width: 45%;
+	height: 35%;
+	position: absolute;
+	z-index: 2;
+	left:-65px;
+	top: 90px;
+	}
+
+#afbeelding2{
+	width: 53%; 
+	height:30%;
+	position: absolute;
+	left:-75px;
+	top: 90px;
+	z-index: 2;
+	}
+
+/*De afbeeldingen moet ongeveer dezelfde grootte en plek krijgen */
+#afbeelding3, #afbeelding4 ,#afbeelding5, #afbeelding6, #afbeelding7, #afbeelding8{
+	position: absolute;
+	top: 90px;
+	z-index: 2;
+	background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}	
+
+#afbeelding3{
+	width: 48%;
+	height: 43%;
+	left: -65px;
+	}
+
+#afbeelding4{
+	width: 46%;
+	height: 41%;
+	left: -55px;
+	}
+
+#afbeelding5{
+	width:47%;
+	height:42%;
+	left:-70px;
+	}
+
+#afbeelding6{
+	width:63%;
+	height:23%;
+	left: -85px;
+	top: 100px;
+	}
+
+#afbeelding7{
+	width: 42%;
+	height: 30%;
+	left: -60px;
+	}
+
+ #afbeelding8{
+ 	width:65%;
+ 	height:30%;
+ 	left: -55px;
+ 	}
+
+.gebeurtenissen-container{
+	display: flex;
+	}
+
+#korte-height-a, #korte-height-b, #korte-height-c{
+	min-height: 210px;
+	}
+
+footer{
+	align-content: flex-end;
+	font-size: 13px;
+	width: 100%;
+	height: 33px;
+	background-color: #BCBCBC;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	}
+
+
+/* Hier komt de code voor Tablet resolutie */
+
+@media only screen and (min-width: 361px){
+	h1{
+		font-size: 28px;
+		height: 41px;
+		padding-top: 15px;
+	}
+
+	.tijdlijn-begin, .tijdlijn-eind{
+		width: 712px;
+		height:31px; 
+		font-size:18px;
+		padding-top: 4px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	.vertical-line{
+		height: 3084px;
+		left: 50%;
+		top: 104px;
+	}
+
+	.kader-gebeurtenis> .datum{
+		font-size: 23px;
+		margin-left: 100px;
+	}
+
+	h4{
+		font-size: 25px;
+		width: 475px;
+		margin: auto;
+		margin-left: 100px;
+	}
+
+	/*De box wordt breder */
+	.kader-gebeurtenis{
+		font-size: 13px;
+		width: 604px;
+		min-height: 350px;
+		padding-left: 70px;
+		padding-top: 20px;
+		margin-left: 60px;
+	}
+
+	.kader-gebeurtenis p{
+		font-size:20px;
+		width: 470px;
+		margin: auto;
+		margin-left: 100px;
+	}
+
+	#afbeelding1{
+		width: 33%;
+		height: 50%;
+		left: -70px;
+	}
+
+	#afbeelding2{
+		width: 39%;
+		height: 50%;
+		left: -90px;
+	}
+
+	#afbeelding3{
+		width: 35%;
+		height: 70%;
+		left: -70px;
+		top: 45px;
+	}
+
+	#afbeelding4{
+		width: 35%;
+		height: 80%;
+		left: -60px;
+		top: 20px;
+	}
+
+	#afbeelding5{
+		width: 36%;
+		height: 62%;
+		left: -90px;
+		top: 50px;
+	}
+
+	#afbeelding6{
+		width:50%;
+		height:40%;
+		left: -115px;
+	}
+
+	#afbeelding7{
+		width:33%;
+		height:50%;
+		left: -70px; 
+	}
+
+	#afbeelding8{
+		width: 50%;
+		height:50%;
+		left: -55px;
+	}
+}
+
+/*Hier komt de code voor desktop klein resolutie */
+@media only screen and (min-width: 766px){
+	.tijdlijn{
+		width: 90%;
+		margin: auto;
+	}
+
+	h1{
+		font-size: 30px;
+		height: 47px;
+		padding-top: 14px;
+	}
+
+	.tijdlijn-begin, .tijdlijn-eind{
+		width: 1100px;
+		height:51px; 
+		font-size:28px;
+		padding-top: 13px;
+		margin-left: 60px;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	.kader-gebeurtenis> .datum{
+		font-size: 28px;
+	}
+
+	.vertical-line{
+		height: 3250px;
+		left: 50%;
+		top: 158px;
+	}
+	
+	h4{
+		padding-top: 15px;
+		font-size: 28px;
+		width: 475px;
+		margin: auto;
+		margin-left: 100px;
+	}
+
+	/*De box wordt nog breder */
+	.kader-gebeurtenis{
+		font-size: 13px;
+		width: 1039px;
+		min-height: 350px;
+		padding-left: 70px;
+		padding-top: 20px;
+		margin-left: 60px;
+		margin-bottom: 40px;
+	}
+
+	.kader-gebeurtenis p{
+		font-size:23px;
+		width: 850px;
+		margin: auto;
+		margin-left: 100px;
+		margin-top: 15px;
+	}
+
+	#afbeelding1{
+		width: 25%;
+		height: 65%;
+		left: -120px;
+		top: 70px;
+	}
+
+	#afbeelding2{
+		width: 30%;
+		height: 65%;
+		left: -143px;
+		top: 70px;
+	}
+
+	#afbeelding3{
+		width: 26%;
+		height: 90%;
+		left: -120px;
+		top: 17px;
+	}
+
+	#afbeelding4{
+		width: 26%;
+		height: 90%;
+		left: -105px;
+		top: 15px;
+	}
+
+	#afbeelding5{
+		width: 27%;
+		height: 87%;
+		left: -150px;
+		top: 20px;
+	}
+
+	#afbeelding6{
+		width:37%;
+		height:53%;
+		left: -180px;
+	}
+
+	#afbeelding7{
+		width:25%;
+		height:65%;
+		left: -125px;
+		top:70px ; 
+	}
+
+	#afbeelding8{
+		width: 37%;
+		height:65%;
+		left: -105px;
+		top:65px;
+	}
+
+	footer{
+		font-size: 16px;
+		height: 50px;
+		padding-top: 30px;
+	}
+}
+
+/*Hier komt de code voor desktop groot resolutie */
+@media only screen and (min-width: 1367px){
+	.tijdlijn{
+		width: 65%;
+		margin: auto;
+	}
+
+	h1{
+		font-size: 35px;
+		height: 51px;
+		padding-top: 13px;
+	}
+
+	.tijdlijn-begin, .tijdlijn-eind{
+		width: 1119px;
+		height:65px; 
+		font-size:34px;
+		padding-top: 13px;
+		margin-left: 60px;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	.vertical-line{
+		height: 3424px;
+		left: 50%;
+		top: 175px;
+	}
+	
+	.kader-gebeurtenis> .datum{
+		font-size: 30px;
+	}
+	
+	h4{
+		padding-top: 15px;
+		font-size: 30px;
+		width: 475px;
+		margin: auto;
+		margin-left: 120px;
+	}
+
+	.kader-gebeurtenis{
+		font-size: 13px;
+		width: 1055px;
+		min-height: 350px;
+		padding-left: 70px;
+		padding-top: 20px;
+		margin-left: 60px;
+		margin-bottom: 40px;
+	}
+
+	.kader-gebeurtenis p{
+		font-size:25px;
+		width: 850px;
+		margin: auto;
+		margin-left: 120px;
+		margin-top: 15px;
+	}
+
+	#afbeelding1{
+		width: 25%;
+		height: 65%;
+		left: -120px;
+		top: 70px;
+	}
+
+	#afbeelding2{
+		width: 30%;
+		height: 65%;
+		left: -143px;
+		top: 70px;
+	}
+
+	#afbeelding3{
+		width: 26%;
+		height: 90%;
+		left: -120px;
+		top: 17px;
+	}
+
+	#afbeelding4{
+		width: 26%;
+		height: 90%;
+		left: -105px;
+		top: 15px;
+	}
+
+	#afbeelding5{
+		width: 27%;
+		height: 87%;
+		left: -150px;
+		top: 20px;
+	}
+
+	#afbeelding6{
+		width:37%;
+		height:53%;
+		left: -180px;
+	}
+
+	#afbeelding7{
+		width:25%;
+		height:65%;
+		left: -125px;
+		top:70px ; 
+	}
+
+	#afbeelding8{
+		width: 37%;
+		height:65%;
+		left:-105px;
+		top:65px;
+	}
+
+	footer{
+		font-size: 16px;
+		height: 50px;
+		padding-top: 30px;
+	}
+}

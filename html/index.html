@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tijdlijn "Responsive Design"</title>
+		<link rel="stylesheet" type="text/css" href="../style/index.css">
+	</head>
+	<body>
+		<header>
+			<h1><span>Tijdlijn:</span> Responsive Design</h1>
+			<!--Hier komt het menu maar dit is nog geen prioriteit of Must. <div class="menu">
+				<p>-</p>
+				<p>-</p>
+				<p>-</p>
+			</div>-->
+		</header>
+		<div class="tijdlijn">
+			<!--Dit is het begin van de tijdlijn -->
+			<div class="tijdlijn-begin">
+				<h3>Vroeger</h3>
+			</div>
+			<!--Om de gebeurtenissen in de tijdlijn een verbinding te geven, creër ik div-block die met css een verticale lijn vormt.  -->
+			<div class="vertical-line">
+			</div>
+			<div class="gebeurtenissen-container">
+				<div class="gebeurtenis-containeritem">
+					
+					<div class="kader-gebeurtenis">
+						<h4>QWERTY-toetsenbord</h4>
+						<p>	In dit jaar werd de QWERTY-
+							toetsenbord ontworpen door onder andere Christopher Sholes. Dit toetsenbord zorgde ervoor dat de letters die op het papier werden afgedrukt door de schrijfmachines ,netjes naast elkaar kwamen te staanen niet langs elkaar botsten.Het gebruik van dit toetsenbord zorgde er dus voor dat de teksten op papier er overzichtelijker uit kwamen te zien. 
+						</p>
+						<p class="datum">1874</p>
+						<!--Om afbeeldingen mee te laten schalen krijgen de afbeeldingen bij elke breakpoint een eigen width en height. De afbeeldingen zijn niet gelijk aan elkaar. -->
+						<div>
+							<img src="../img/afbeeldingen1.png" id="afbeelding1">
+						</div>
+					</div>
+					
+					<div class="kader-gebeurtenis">
+						<h4>Floppy Disks op maat</h4>
+						<p>	Floppy Disks werden ontworpen om data op te slaan. De grootte van deze disks waren 3,5 inch, dat is ongeveer 7,6 centimeter. De diskwas niet erg groot , omdat de disk in de borstzak moest passen. Deze Disks worden nu nog steeds als pictogrammen gebruikt op sommige user interfaces. Het icoon staat namelijk voor het opslaan van data. De floppy Disk was dus al een ontwerp dat zich moest aanpassen aan een ander element, namelijk de grootte van een borstzak.
+						</p>
+						<p class="datum">1980</p>
+						<div>
+							<img src="../img/afbeelding2.png" id="afbeelding2">
+						</div>
+					</div>
+					<!-- De paragraaf is kort dus deze box krijgt een class om de height aan te passen
+					 -->
+					<div class="kader-gebeurtenis" id="korte-height-a">
+						<h4>Opkomst World Wide Web</h4>
+						<p>	Tim Berners-Lee pakte het informatiebeheer op grote schaal aan door een document te produceren met de titel: “Information Management: A Proposal”. Zijn leidinggevende zag de potentie in het idee. Zo werd het voorstel gerealiseerd en werd het de World Wide Web. 
+						</p>
+						<p class="datum">1989</p>
+						<div>
+							<img src="../img/afbeelding 3.png" id="afbeelding3">
+						</div>
+					</div>
+					<div class="kader-gebeurtenis" id="korte-height-b">
+						<h4>HTTP </h4>
+						<p>	De web browsers gebruiken http om data te verzenden en ontvangen. http staat voor HyperText Transfer Protocol. Deze URLS werden gemaakt aan de hand van HTML. Door de A tag en href attribuut was het mogelijk pagina’s te linken. 
+						</p>
+						<p class="datum">1991</p>
+						<div>
+							<img src="../img/afbeelding 4.png" id="afbeelding4">
+						</div>
+					</div>
+					<div class="kader-gebeurtenis" id="korte-height-c">
+						<h4>Yess! Nog een browser erbij</h4>
+						<p>	In dit jaar ontstond de tweede webbrowser, genoemd de Line Mode Browser. Dit zorgde voor problemen bij interoperabiliteit en compatibiliteit met oudere versies. Er moest bijvoorbeeld rekening worden gehouden met de hoe de websites eruit kwamen te zien op beide webbrowsers.
+						</p>
+						<p class="datum">1992</p>
+						<div>
+							<img src="../img/afbeelding 5.png" id="afbeelding5">
+						</div>
+					</div>
+					<!--Deze tekst moet goed leesbaar zijn, omdat het een opsomming bevat, daarom moet ik gebruik maken van bold om de belangrijkste punten te benadrukken en de br tag om witregels te creëren. -->
+					<div class="kader-gebeurtenis">
+						<h4>Het web... net een gebouw</h4>
+						<p>Stewart Brand beschrijft 6 lagen die ook bij websites te gebruiken zijn:
+						<br/>
+							<b>-     Plaats:</b> het gebouw veranderd alleen op geologische tijdschaal.<br/>
+							<b>-     Structuur:</b> het kan heel lang bestaan. <br/>
+							<b>-     Huid:</b> het buitenoppervlak wordt om de tien jaar bijgewerkt. <br/>
+							<b>-     Diensten:</b> de bedradingen en leidingwerken worden ook om de tien jaar bijgewerkt. <br/>
+							<b>-     Ruimte plan:</b> de lay-out van muren en deuren worden aan de hand van de ernst van de situatie veranderd. <br/>
+							<b>-     Spullen:</b> de manier waarop de meubels staan kan elke dag worden aangepast.
+							<br/><br/>Voor de structuur, presentatie en gedrag wordt HTMl, CSS en Javascript gebruikt. 
+						</p>
+						<p class="datum">1994</p>
+						<div>
+							<img src="../img/afbeelding 6.png" id="afbeelding6">
+						</div>
+					</div>
+					<div class="kader-gebeurtenis">
+						<h4>HTML code twee functies?</h4>
+						<p>	David Siegel publiceerde een boek genaamd Creating Killer Websites. In dit boek legde hij uit hoe je html pagina’s stijl kon geven met html. Zo legde hij uit hoe je de table kon gebruiken voor het hermaken van een lay-out. Dit kon ook door bijvoorbeeld de witruimtes tussen afbeeldingen te bepalen door het gebruik van de img tag. Het gebruik van html als visuele instructies, zorgt ervoor dat html zijn vocabulaire betekenis kwijtraakt.
+						</p>
+						<p class="datum">1996</p>
+						<div>
+							<img src="../img/afbeelding 7.png" id="afbeelding7">
+						</div>
+					</div>
+					<div class="kader-gebeurtenis">
+						<h4>Reagerend ontwerp</h4>
+						<p>	In april 2010 stond Ethan Marcotte op een podium in Seattle. Hij vertelde aan de groep mensen die met websites te maken hadden dat het idee dat gebouwen kunnen veranderen en aanpassen aan de wensen van de mensen die gebruik maken van het gebouw uit de architectuur komt. Het wordt responsive design, reagerend ontwerp genoemd. Volgens Marcotte zou het een manier kunnen zijn om websites te maken.  
+						</p>
+						<p class="datum">2010</p>
+						<div>
+							<img src="../img/afbeelding8.png" id="afbeelding8">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Dit is het eind van de tijdlijn -->
+			<div class="tijdlijn-eind">
+				<h3>Nu</h3>
+			</div>
+		</div>
+		<footer>
+			©2018 Responsive design tijdlijn door Shantusha.
+		</footer>
+	</body>
+</html>
+
